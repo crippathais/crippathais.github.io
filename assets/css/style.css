@@ -145,7 +145,7 @@ img {
 .themeix-btn.primary-bg:hover {
     color: #fff;
 }
-.danger-bg {
+.danger-bg 
     background-color: rgba(230, 210, 108, 1);
     color: #fff;
 }
@@ -155,20 +155,20 @@ img {
 }
 .hover-bg {
     background-color: rgba(3, 152, 158, 1);
-    color: #666666;
+    color: #fff;
 }
 .themeix-btn.danger-bg:hover {
     background-color: rgba(184, 231, 223, 1);
     color: #fff;
 }
-.hover-bg {
+/* .hover-bg {
     background: url(../images/hover-bg.gif);
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
     /* background-color: rgba(30, 48, 72, 1); */
     color: #fff;
-}
+} */
 .bg {
     background-color: rgba(3, 152, 158, 1);
     color: #fff;  
@@ -235,10 +235,14 @@ input:-webkit-autofill:focus {
     position: relative;
     margin-bottom: 0;
     box-shadow: 5px 0 20px rgba(0, 0, 0, 0.39);
-    background: url(../images/navbar.png);
+    /* background: url(../images/navbar.png); */
+    background: #eef4f9;
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
+    /* font-family:'myFirstFont'; */
+    
+
     /* background-color: #eef4f9; */
 }
 /* .menu-area img {
@@ -257,6 +261,8 @@ input:-webkit-autofill:focus {
    padding-bottom:30px;
     text-align:left;
 text-transform: capitalize;	
+
+
 }
 .top-menu > nav > ul > li > a > span {
     display: block;
@@ -265,6 +271,7 @@ text-transform: capitalize;
     text-transform: capitalize;
     font-weight: 400;
     text-align: left;
+
 }
 .top-menu > nav > ul > li:hover > a {
     color: rgba(230, 210, 108, 1);
@@ -272,10 +279,16 @@ text-transform: capitalize;
 .top-menu nav ul li a span:hover {
     color: #7a7a7a;
 }
+@font-face {
+    font-family: "myFirstFont";
+    src: url("/gruppo-regular-webfont.woff") format("woff");
+  }
+
 .top-menu > nav > ul > li > a {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 900;
     color: #333333;
+
 }
 .header-logo {
     padding-top: 17px;
@@ -365,14 +378,14 @@ ul.dropdown li a span {
 .slider-wrapper-2 {
     height: 200px;
     text-align: center;
-    background: url(../images/slider_m.png);
-    background: url(../images/workshop/VIIBIPMed.png);
+    background: url(../images/slider.gif);
+    /* background: url(../images/workshop/VIIBIPMed.png); */
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
 }
 .slider-wrapper-2:after {
-    background-color: rgba(22, 170, 207, 0.425);
+    background-color: rgba(22, 170, 207, 0.199);
     position: absolute;
     content: "";
     top: 0;
@@ -698,15 +711,20 @@ canvas {
     background-position: 50% 50%;
 	z-index: 1;
 }
-
-
 .slider {
     position:relative;
 }
 .count-particles {
     border-radius: 0 0 2px 2px;
 }
+
+@font-face {
+    font-family: "myFirstFont";
+    src: url("/gruppo-regular-webfont.woff") format("woff");
+  }
+
 .slider-fixed-text {
+  font-family:'myFirstFont';
   color: rgb(12, 12, 12);
   left: 0;
   position: absolute;
@@ -717,6 +735,7 @@ canvas {
   z-index: 2;
       max-width: 850px;
     margin: 0 auto;
+
 }
 .slider-fixed-text p {
     font-size: 18px;
@@ -724,10 +743,10 @@ canvas {
     font-weight: 300;
     line-height: 28px;
 }
-.slider-fixed-text h1 {
+/* .slider-fixed-text h1 {
     text-transform:uppercase;
     font-size:35px;
-}
+} */
 /********** particleground *****/
 
 #partical-js {
@@ -759,6 +778,7 @@ canvas {
 }
 .single-box:hover {
 background-color: #fff;
+
 }
 .single-box h3 {
     font-size: 24px;
@@ -770,6 +790,7 @@ background-color: #fff;
 }
 .box-inner .themeix-btn {
     margin-top: 15px;
+    row-gap: 1em;
 }
 
 .single-box .box-inner {
@@ -781,6 +802,7 @@ background-color: #fff;
     transform-style:preserve-3d;
     transform:rotateY(0);
     transition:all .4s linear 0s;
+    border: #fff solid 20px;
 }
 .single-box .box-inner img {
     padding-bottom: 30px;
@@ -798,7 +820,7 @@ background-color: #fff;
   transform-style:preserve-3d;
   opacity:0;
   visibility:hidden;
-
+  border: #fff solid 15px;
 }
 .flip-box-innner {
     padding: 50px 20px;
@@ -809,7 +831,7 @@ background-color: #fff;
     font-size: 15px;
     text-transform: none;
     line-height: 24px;
-    margin-bottom: 15px;
+    margin-bottom: 40px;
 }
 .flip-box-innner .themeix-btn {
 border: 2px solid #fff;
@@ -3540,7 +3562,7 @@ Awards-section
 }
 .wrapper{
     display:grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 30% 30% 40%;
     /* background-color: rgba(253, 246, 188, 1); */
     grid-column-gap: 1em;
     grid-row-gap: 1em;
@@ -3559,3 +3581,4 @@ hide
 .timeline-Widget--edge {
   background-color:#eef4f9 !important;
   
+
