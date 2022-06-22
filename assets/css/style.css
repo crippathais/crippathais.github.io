@@ -374,7 +374,7 @@ ul.dropdown li a span {
 .slider-wrapper {
     height: 500px;
     text-align:center;
-}
+}bundle exec jekyll serve
 .slider-wrapper-2 {
     height: 200px;
     text-align: center;
